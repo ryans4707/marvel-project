@@ -7,13 +7,10 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-    user_name = params[:name]
-    user_playlist_id = params[:playlist_id]
-    @user_playlist = Playlist.new(user_name,user_playlist_id)
-    @user_playlist.get_info
-    @user_playlist.get_lyrics
-    
+      puts params
+    user_region= params[:user_region]
+    @user_name=get_name(user_region)
     erb :result
   end
-
+  
 end
