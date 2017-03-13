@@ -18,12 +18,10 @@
   <body>
     
     <div class="container-fluid">
-      <h1>Welcome to Lyrics Playlist App</h1>
-      <h3>Enter a Spotify user and playlist ID to get the lyrics!</h3>
-      <form method="post" action="/result">
-        Spotify User: <input type="text" name="name" size="30"><br>
-        Playlist ID: <input type="text" name="playlist_id" size="35"><br>
-        <input type="submit" value="Get my lyrics!">
+      <h1>Enter a Region of the world(EX:United States)</h1>
+      <form action='/result' method='post' >
+        <input type="text" name="user_region_name">
+        <input type="Submit" value="See the name">
       </form>
     </div>
     
