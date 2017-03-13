@@ -7,7 +7,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-      puts params
+    
     user_region= params[:user_region]
     @user_name=get_name(user_region)
     erb :result
