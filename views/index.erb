@@ -14,13 +14,35 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
+    <style>
+      h1{
+    color:  black;
+      }
+      input[type="text"] {
+    width: 75%;
+   
+    color:blue;
+      }
+      body{
+      
+      background-image: url("http://globalequality.org/storage/images/colormap-web.jpg");
+      }
+
+      
+      
+      
+    </style>
   </head>
   <body>
     
     <div class="container-fluid">
-      <h1>Enter a Region of the world(EX:United States)</h1>
+
+      <h1>Enter a Region of the world to see a random name that is used there!</h1>
+
       <form action='/result' method='post' >
-        <input type="text" name="user_region_name">
+        <br> 
+        <input type="text" name="user_region_name" placeholder="Ex: United States ">
+
         <input type="Submit" value="See the name">
       </form>
     </div>
