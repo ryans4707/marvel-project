@@ -18,7 +18,7 @@ def get_name(region)
     result["name"]
 end
 
-puts get_name("United States")
+# puts get_name("United States")
 # #a
 # RSpotify.authenticate(ENV["SPOTIFY_ID"], ENV["SPOTIFY_SECRET"])
 
