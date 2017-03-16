@@ -11,7 +11,7 @@ require 'pp'
 # puts result["name"]
 
 def get_name(region)
-    url = 'http://uinames.com/api/?region=United States'
+    url = 'http://uinames.com/api/?amount=1'
     uri= URI(url)
     response = Net::HTTP.get(uri)
     result = JSON.parse(response)
