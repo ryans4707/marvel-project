@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
     
     user_region= params[:user_region]
     @user_name=get_name(user_region)
-    erb :result
+    erb :result 
   end
   
 end
