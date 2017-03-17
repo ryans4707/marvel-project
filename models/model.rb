@@ -7,19 +7,24 @@ require 'pp'
 # url = 'http://uinames.com/api/?amount=1'
 # uri= URI(url)
 # response = Net::HTTP.get(uri)
+# pp JSON.parse(response)
 # result = JSON.parse(response)
-# puts result["name"]
+# puts 
+# # puts result["name"]
 
 def get_name(region)
-    url = 'http://uinames.com/api/?amount=1'
+    url = 'https://uinames.com/api/'
     uri= URI(url)
     response = Net::HTTP.get(uri)
     result = JSON.parse(response)
     result["name"]
+   
 end
 
 
-# puts get_name("United States")
+
+
+
 
 
 
